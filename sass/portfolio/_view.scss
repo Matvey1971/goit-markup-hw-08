@@ -1,0 +1,85 @@
+/* ПОРТФОЛИО */
+.view {
+    padding: 94px 0 64px 0;
+
+    &__tools {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    &__btn {
+        background-color: var(--back-ad-main);
+        color: var(--main-text);
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.04em;
+        padding: 6px 22px;
+        border-radius: 5px;
+        border: none;
+        margin: 0 8px 0 0;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1), box-shadow 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+    &__btn:hover, .view__btn:focus    {
+        background-color: var(--back-ad-hover);
+        color: var(--on-back-text);
+        box-shadow: 2px 4px 4px 2px var(--shadow-main);
+    }
+    &__base {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+    }
+    &__common-a {
+        transition: box-shadow 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+    &__card {
+        position: relative;
+        overflow: hidden;
+    }
+    &__card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--back-ad-hover-op90);
+        width: 100%;
+        height: 100%;
+        transition: transform 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        transform: translateY(100%);
+    }
+    &__card-overlay-text {
+        color: var(--on-back-text);
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 00.03em;
+        line-height: 1.75;
+        padding: 63px 24px;
+    }
+    &__card-text {
+        padding: 20px 24px 20px 24px;
+    }
+    &__card-title {
+        color: var(--main-text);
+        font-size: 18px;
+        margin: 0 0 4px 0;
+        line-height: 2.0;
+    }
+    &__card-text-p {
+        color: var(--ad-main-text);
+        line-height: 1.9;
+        margin: 0;
+    }
+    &__common {
+        width: 370px;
+        border: 1px solid var(--line-view);
+        margin-bottom: 30px;
+        transition: box-shadow 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+    &__common-a:focus, .view__common-a:hover {
+        box-shadow: 0 4px 8px 0 var(--shadow-main);
+    }
+    &__common-a:hover .view__card-overlay, .view__common-a:focus .view__card-overlay {
+        transform: translateY(0);
+    }
+}

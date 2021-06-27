@@ -1,0 +1,41 @@
+/* секция ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.works {
+    padding-bottom: 94px;
+
+    &__title {
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--main-text);
+        text-align: center;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    &__images {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inform {
+        width: 370px;
+        position: relative;
+        z-index: -1;
+    
+    }
+    &__aplic {
+        position: absolute;
+        bottom: 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        width: 370px;
+        height: 70px;
+        letter-spacing: 0.03em;
+        background: var(--back-main-op80);
+        color: var(--on-back-text);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
