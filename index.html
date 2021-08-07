@@ -24,6 +24,11 @@
                     <li><a class="header__list-a" href="">Контакты</a></li>
                 </ul>                                                                  
             </nav>
+            <button class="burger__btn" data-menu-open>
+                <svg class="icon burger__btn-icon">
+                    <use href="./images/icons/sprite.svg#burger"></use>
+                </svg>
+            </button>
             <ul class="header__contacts">
                 <li>
                     <a class="header__icon-text" href="mailto:info@devstudio.com">
@@ -42,70 +47,94 @@
                 </li>
             </ul>
         </div>
+        <div class="burger__menu" data-menu>
+            <div class="container burger__menu-container">
+                <button class="burger__menu-btn-close btn-close"  data-menu-close>
+                    <svg class="icon burger__menu-icon-close">
+                        <use href="./images/icons/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <ul class="burger__menu-nav">
+                    <li><a href="" class="burger__menu-link">студия</a></li>
+                    <li><a href="" class="burger__menu-link">портфолио</a></li>
+                    <li><a href="" class="burger__menu-link">контакты</a></li>
+                </ul>
+                <ul class="burger__menu-contacts">
+                    <li><a href="" class="burger__menu-link">+38 096 111 11 11</a></li>
+                    <li><a href="" class="burger__menu-link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="burger__menu-networks">
+                    <li class="burger__menu-social"><a href="" class="burger__menu-link">Instagram</a></li>
+                    <li class="burger__menu-social"><a href="" class="burger__menu-link">Twitter</a></li>
+                    <li class="burger__menu-social"><a href="" class="burger__menu-link">Facebook</a></li>
+                    <li><a href="" class="burger__menu-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
     </header> 
     <main>
         <!-- <section class="solutions">
             <div class="container solutions--container">
                 <h1 class="solutions__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button class="solutions__btn" data-modal-open>Заказать услугу</button>
-                    <div class="solutions__backdrop is-hidden" data-modal>
-                        <div class="solutions__modal">
-                            <form class="js-speaker-form solutions__form" action="#">
-                                <p class="solutions__form-offer">Оставьте свои данные, мы вам перезвоним</p>
-                                <div class="solutions__form-field">
-                                    <label for="name" class="solutions__form-label">имя</label>
-                                    <div class="solutions__form-input-svg">
-                                        <input type="text" name="name" id="name" class="solutions__form-input">
-                                        <svg class="icon solutions__form-icon-name">
-                                            <use href="./images/icons/sprite.svg#name"></use>
+                <div class="solutions__backdrop is-hidden" data-modal>
+                    <div class="solutions__modal">
+                        <form class="js-speaker-form solutions__form" action="#">
+                            <p class="solutions__form-offer">Оставьте свои данные, мы вам перезвоним</p>
+                            <div class="solutions__form-field">
+                                <label for="name" class="solutions__form-label">имя</label>
+                                <div class="solutions__form-input-svg">
+                                    <input type="text" name="name" id="name" class="solutions__form-input">
+                                    <svg class="icon solutions__form-icon-name">
+                                        <use href="./images/icons/sprite.svg#name"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="solutions__form-field">
+                                <label for="tel" class="solutions__form-label">телефон</label>
+                                <div class="solutions__form-input-svg">
+                                    <input type="tel" name="tel" id="tel" pattern="[0-9]{5,10}" class="solutions__form-input">
+                                    <svg class="icon solutions__form-icon-tel">
+                                        <use href="./images/icons/sprite.svg#tel"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="solutions__form-field">
+                                <label for="mail" class="solutions__form-label">почта</label>
+                                <div class="solutions__form-input-svg">
+                                    <input type="email" name="mail" id="mail" class="solutions__form-input">
+                                    <svg class="icon solutions__form-icon-mail">
+                                        <use href="./images/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="solutions__form-field">
+                                <label for="textarea" class="solutions__form-label">коментарий</label>
+                                <textarea name="text" id="textarea" cols="20" rows="8" class="solutions__form-textarea-input" placeholder="Введите текст"></textarea>
+                            </div>
+                            <div class="solutions__form-checkbox">
+                                <label class="solutions__form-check-label">
+                                    <input type="checkbox" name="policy" class="solutions__form-checkbox-input">
+                                    <span class="solutions__form-check-svg">
+                                        <svg class="icon solutions__form-icon-check">
+                                            <use href="./images/icons/sprite.svg#check"></use>
                                         </svg>
-                                    </div>
-                                </div>
-                                <div class="solutions__form-field">
-                                    <label for="tel" class="solutions__form-label">телефон</label>
-                                    <div class="solutions__form-input-svg">
-                                        <input type="tel" name="tel" id="tel" pattern="[0-9]{5,10}" class="solutions__form-input">
-                                        <svg class="icon solutions__form-icon-tel">
-                                            <use href="./images/icons/sprite.svg#tel"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="solutions__form-field">
-                                    <label for="mail" class="solutions__form-label">почта</label>
-                                    <div class="solutions__form-input-svg">
-                                        <input type="email" name="mail" id="mail" class="solutions__form-input">
-                                        <svg class="icon solutions__form-icon-mail">
-                                            <use href="./images/icons/sprite.svg#mail"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="solutions__form-field">
-                                    <label for="textarea" class="solutions__form-label">коментарий</label>
-                                    <textarea name="text" id="textarea" cols="20" rows="8" class="solutions__form-textarea-input" placeholder="Введите текст"></textarea>
-                                </div>
-                                <div class="solutions__form-checkbox">
-                                    <label class="solutions__form-check-label">
-                                        <input type="checkbox" name="policy" class="solutions__form-checkbox-input">
-                                        <span class="solutions__form-check-svg">
-                                            <svg class="icon solutions__form-icon-check">
-                                                <use href="./images/icons/sprite.svg#check"></use>
-                                            </svg>
-                                        </span>
-                                        <span>соглашаюсь с рассылкой и принимаю</span>
-                                        <span> <a href="" class="solutions__form-checkbox-text">Условия договора</a></span>
-                                    </label>
-                                </div>
-                                <div class="solutions__form-submit">
-                                    <button type="submit" class="solutions__form-btn">отправить</button>
-                                </div>
-                            </form>
-                            <button class="solutions__modal-btn-close"  data-modal-close>
-                                <svg class="icon solutions__modal-icon-close">
-                                    <use href="./images/icons/sprite.svg#close"></use>
-                                </svg>
-                            </button>
-                        </div>
+                                    </span>
+                                    <span>соглашаюсь с рассылкой и принимаю</span>
+                                    <span> <a href="" class="solutions__form-checkbox-text">Условия договора</a></span>
+                                </label>
+                            </div>
+                            <div class="solutions__form-submit">
+                                <button type="submit" class="solutions__form-btn">отправить</button>
+                            </div>
+                        </form>
+                        <button class="solutions__modal-btn-close"  data-modal-close>
+                            <svg class="icon solutions__modal-icon-close">
+                                <use href="./images/icons/sprite.svg#close"></use>
+                            </svg>
+                        </button>
                     </div>
+                </div>
             </div>
         </section> -->
         <!-- <section class="edge">
@@ -460,7 +489,7 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/menu.js"></script>
     <script>
         (() => {
             document

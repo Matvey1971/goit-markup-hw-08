@@ -1,6 +1,18 @@
 /* секция HEADER */
 
 .header {
+    padding: 10px 0;
+    &__list {
+        display: none;
+    }
+    &__contacts {
+        display: none;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     // border-bottom: 1px solid var(--header-border);
 
     // &__container,
@@ -79,6 +91,21 @@
     // }
 }
 .emblem {
+    color: var(--ad-hover-text); 
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    &--header {
+        color: var(--emblem-text);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
+    
     // color: var(--ad-hover-text); 
     // line-height: 1.2;
     // letter-spacing: 0.03em;
@@ -90,4 +117,64 @@
     //     color: var(--emblem-text);
     // }
 }
+.burger__btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    align-items: center;
+    line-height: 0;
+}
+.burger__btn-icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--main-text);
+}
+.burger__menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 
+.burger__menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: violet;
+    width: 100vw;
+    height: 100vw;
+    z-index: 50;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+  
+.burger__menu-container {
+    position: relative;
+}
+.burger__menu-networks {
+    display: flex;
+    justify-content: space-around;
+}
+.burger__menu-social {
+    border-right: 1px solid var(--border-input);
+    padding-right: 20px;
+}
+.burger__menu-btn-close {
+    border: none;
+    background: transparent;
+    padding: 0;
+    align-items: center;
+    line-height: 0;
+
+}
+.btn-close {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+}
+.burger__menu-icon-close {
+    width: 19px;
+    height: 19px;
+    fill: var(--main-text);
+}
