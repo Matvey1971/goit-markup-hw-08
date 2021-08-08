@@ -1,64 +1,63 @@
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-    &__title {
-        text-align: center;
-        font-size: 36px;
-        font-weight: bold;
-        letter-spacing: 0.03em;
-        line-height: 1.18;
-        margin: 0 0 50px 0;
-    }
-    &__const {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 170px;
-        height: 90px;
-        border: 1px solid var(--social-icon-main);
-        border-radius: 4px;
-        transition: border 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
-    }
-    &__icon-yaco {
-        width: 44px;
-        height: 50px;
-    }
-    &__icon-tagline {
-        width: 40px;
-        height: 52px;
-    }
-    &__icon-company {
-        width: 42px;
-        height: 42px;
-    }
-    &__icon-foster {
-        width: 80px;
-        height: 42px;
-    }
-    &__icon-brand {
-        width: 60px;
-        height: 46px;
-    }
-    &__icon-companytl {
-        width: 88px;
-        height: 46px;
-    }
-    &__card:hover,
-    &__card:focus {
-        border: 1px solid var(--back-ad-hover);
-        cursor: pointer;
-    }
-    &__card:focus .icon {
-        fill: var(--back-ad-hover);
-    }
-    &__card:hover .icon {
-        fill: var(--back-ad-hover);
-    }
-    
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    line-height: 1.18;
+    margin: 0 0 50px 0;
+  }
+  &__const {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--social-icon-main);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
+  }
+  &__icon-yaco {
+    width: 44px;
+    height: 50px;
+  }
+  &__icon-tagline {
+    width: 40px;
+    height: 52px;
+  }
+  &__icon-company {
+    width: 42px;
+    height: 42px;
+  }
+  &__icon-foster {
+    width: 80px;
+    height: 42px;
+  }
+  &__icon-brand {
+    width: 60px;
+    height: 46px;
+  }
+  &__icon-companytl {
+    width: 88px;
+    height: 46px;
+  }
+  &__card:hover,
+  &__card:focus {
+    border: 1px solid var(--back-ad-hover);
+    cursor: pointer;
+  }
+  &__card:focus .icon {
+    fill: var(--back-ad-hover);
+  }
+  &__card:hover .icon {
+    fill: var(--back-ad-hover);
+  }
 }
