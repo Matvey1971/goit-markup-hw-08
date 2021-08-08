@@ -402,6 +402,14 @@ textarea:focus {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
 :root {
   --main-text: rgba(33, 33, 33, 1);
   --ad-main-text: rgba(117, 117, 117, 1);
@@ -908,6 +916,21 @@ textarea:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .edge__container {
+    justify-content: center;
+  }
+  .edge__item {
+    width: 270px;
+  }
+  .edge__container > li:nth-child(1n) {
+    margin-right: 30px;
+  }
+  .edge__container > li:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
 /* секция ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .works {
   padding-bottom: 94px;
@@ -1046,6 +1069,18 @@ textarea:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__card {
+    width: 270px;
+  }
+  .team__container > li:nth-child(1n) {
+    margin-right: 30px;
+  }
+  .team__container > li:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
 .clients {
   padding-top: 94px;
@@ -1139,6 +1174,19 @@ textarea:focus {
   }
   .clients__const > li:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__const > li {
+    width: 170px;
+    margin-bottom: 30px;
+  }
+  .clients__const > li:nth-child(1n) {
+    margin-right: 30px;
+  }
+  .clients__const > li:nth-child(6n) {
+    margin-right: 0px;
   }
 }
 
