@@ -1366,4 +1366,23 @@ textarea:focus {
   margin-left: 10px;
   fill: var(--on-back-text);
 }
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    width: 50%;
+  }
+  .footer-info > a {
+    line-height: 28px;
+  }
+  .footer-join {
+    width: 50%;
+    margin: 0;
+  }
+  .footer-join-text {
+    line-height: 28px;
+  }
+  .footer-form__input {
+    width: 450px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
