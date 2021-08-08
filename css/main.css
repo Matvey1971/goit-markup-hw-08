@@ -398,33 +398,8 @@ textarea:focus {
 
 /*for chrome*/
 .container {
-  width: 320px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
 }
 
 :root {
@@ -1060,14 +1035,23 @@ textarea:focus {
 
 .clients__const {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.clients__const > li {
+  width: calc(50% - 15px);
+  margin-bottom: 30px;
+}
+
+.clients__const > li:nth-child(odd) {
+  margin-right: 30px;
 }
 
 .clients__card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid var(--social-icon-main);
   border-radius: 4px;

@@ -13,13 +13,21 @@
   }
   &__const {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__const > li {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+  &__const > li:nth-child(odd) {
+    margin-right: 30px;
   }
   &__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+
     height: 90px;
     border: 1px solid var(--social-icon-main);
     border-radius: 4px;
