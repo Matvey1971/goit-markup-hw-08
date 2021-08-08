@@ -978,16 +978,16 @@ textarea:focus {
   margin-bottom: 50px;
 }
 
-.team__members {
+.team__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .team__card {
-  width: 270px;
   background-color: var(--back-team);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
+  margin-bottom: 30px;
 }
 
 .team__card-info {
