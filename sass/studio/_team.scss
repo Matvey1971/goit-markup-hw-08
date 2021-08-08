@@ -16,7 +16,8 @@
   }
   &__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   &__card {
     background-color: var(--back-team);
@@ -68,5 +69,18 @@
   }
   &-circle:focus {
     background-color: var(--back-ad-hover);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    &__card {
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+    }
+
+    &__container > li:nth-child(odd) {
+      margin-right: 30px;
+    }
   }
 }

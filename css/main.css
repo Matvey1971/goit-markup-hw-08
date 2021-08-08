@@ -972,7 +972,8 @@ textarea:focus {
 
 .team__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .team__card {
@@ -1033,6 +1034,16 @@ textarea:focus {
 
 .social-icon-circle:focus {
   background-color: var(--back-ad-hover);
+}
+
+@media screen and (min-width: 768px) {
+  .team__card {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+  .team__container > li:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
