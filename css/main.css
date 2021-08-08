@@ -852,8 +852,12 @@ textarea:focus {
 
 .edge__container {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.edge__item {
+  width: 100%;
 }
 
 .edge__title {
@@ -889,6 +893,19 @@ textarea:focus {
   background-color: var(--back-ad-main);
   margin-bottom: 30px;
   height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .edge__item {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+  .edge__container > li:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .edge__title {
+    text-align: left;
+  }
 }
 
 /* секция ЧЕМ МЫ ЗАНИМАЕМСЯ */

@@ -5,11 +5,13 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   &__item {
+    width: 100%;
   }
 
   &__title {
@@ -45,5 +47,22 @@
     background-color: var(--back-ad-main);
     margin-bottom: 30px;
     height: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .edge {
+    &__item {
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+    }
+
+    &__container > li:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &__title {
+      text-align: left;
+    }
   }
 }
