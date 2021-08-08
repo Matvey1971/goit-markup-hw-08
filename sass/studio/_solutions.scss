@@ -2,12 +2,13 @@
 /* --ЭФФЕКТИВНЫЕ РЕШЕНИЯ-- */
 
 .solutions {
+    
+    background-image: url(../images/main-m1x.jpg);
     display: flex;
     align-items: center;
-    background-image: linear-gradient(var(--back-main-op40), var(--back-main-op40)), url(../images/main.jpg);
-    max-width: 1600px;
+    max-width: 479px;
     margin: 0 auto;
-    height: 600px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -22,11 +23,11 @@
         justify-content: center;
         text-align: center;
         margin: 0 0 30px 0;
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 0.06em;
-        line-height: 1.38;
+        line-height: 1.6;
     }
     &__btn {
         background-color: var(--back-ad-hover);
@@ -56,10 +57,52 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        min-width: 528px;
-        min-height: 581px;
         background-color: var(--back-team);
     }
+
+
+    @media screen and (min-width: 480px) {
+        max-width: 767px;
+        &__modal {
+            min-width: 450px;
+            min-height: 609px;
+        }
+    
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 1199px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+            &__title {
+                margin: 0 0 30px 0;
+                font-size: 44px;
+                letter-spacing: 0.06em;
+                line-height: 1.38;
+            }
+
+    }
+
+    // background-image: linear-gradient(var(--back-main-op40), var(--back-main-op40)), url(../images/main.jpg);
+    // max-width: 1600px;
+    // height: 600px;
+
+    // &__title {
+    //     font-size: 44px;
+    //     letter-spacing: 0.06em;
+    //     line-height: 1.38;
+    // }
+    // &__modal {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     min-width: 528px;
+    //     min-height: 581px;
+    //     background-color: var(--back-team);
+    // }
     &__modal-btn-close {
         background-color: transparent;
         padding: 0;
