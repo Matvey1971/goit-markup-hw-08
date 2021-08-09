@@ -24,6 +24,11 @@
                     <li><a class="header__list-a" href="">Контакты</a></li>
                 </ul>                                                                  
             </nav>
+            <button class="burger__btn" data-menu-open>
+                <svg class="icon burger__btn-icon">
+                  <use href="./images/icons/sprite.svg#burger" />
+                </svg>
+              </button>
             <ul class="header__contacts">
                 <li>
                     <a class="header__icon-text" href="mailto:info@devstudio.com">
@@ -42,6 +47,36 @@
                 </li>
             </ul>
         </div>
+        <div class="burger__menu" data-menu>
+            <div class="container burger__menu-container">
+              <button class="burger__menu-btn-close btn-close" data-menu-close>
+                <svg class="icon burger__menu-icon-close">
+                  <use href="./images/icons/sprite.svg#close" />
+                </svg>
+              </button>
+              <ul class="burger__menu-nav">
+                <li><a href="" class="burger__menu-link">студия</a></li>
+                <li><a href="" class="burger__menu-link">портфолио</a></li>
+                <li><a href="" class="burger__menu-link">контакты</a></li>
+              </ul>
+              <ul class="burger__menu-contacts">
+                <li><a href="" class="burger__menu-link">+38 096 111 11 11</a></li>
+                <li><a href="" class="burger__menu-link">info@devstudio.com</a></li>
+              </ul>
+              <ul class="burger__menu-networks">
+                <li class="burger__menu-social">
+                  <a href="" class="burger__menu-link">Instagram</a>
+                </li>
+                <li class="burger__menu-social">
+                  <a href="" class="burger__menu-link">Twitter</a>
+                </li>
+                <li class="burger__menu-social">
+                  <a href="" class="burger__menu-link">Facebook</a>
+                </li>
+                <li><a href="" class="burger__menu-link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
     </header> 
     <main>
         <section class="view">
@@ -246,5 +281,6 @@
             </form>
         </div>
     </footer> 
+    <script defer src="./js/menu.js"></script>
 </body>
 </html>
